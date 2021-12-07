@@ -19,6 +19,6 @@ void _exevc(void)
 			exit(EXIT_FAILURE);
 		}
 	}
-		if (child > 0)
+	if (child > 0)
 		wait(&status);
 }
