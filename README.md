@@ -31,6 +31,7 @@ simple_shell is a command line interpreter, or shell, in the tradition of the fi
   * [execut_command](./execut_command.c) - Test and execute a command
   * [sep_to_space](./sep_to_space.c) - Change \t and \r into a space
   * [signal_handler](./signal_handler.c) - Catch a Ctrl - C and disable him
+  * [_getline](./_getline.c) - Check the number of characters on a specific line
 
 * [PATH function] :
   * [init_path](./init_path.c) - Initialise a linked list of the PATH contain
