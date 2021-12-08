@@ -100,7 +100,7 @@ simple_shell is a command line interpreter, or shell, in the tradition of the fi
 ## Example of Use :
 Run the executable in your terminal after compiling:
 ```
-gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 shell.h *.c -o hsh
 
 ./hsh
 ```
