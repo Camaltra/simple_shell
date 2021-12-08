@@ -14,7 +14,6 @@ void strtow(char *str)
 	if (str == NULL || *str == '\0')
 		return;
 
-	sep_to_space();
 	word = _strcount_word(str);
 	if (word == 0)
 		return;
