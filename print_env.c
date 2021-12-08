@@ -9,6 +9,12 @@ int print_env(void)
 {
 	int i;
 
+	if (array_command[1] != NULL)
+	{
+		write(STDERR_FILENO, "Error syntaxe : env\n", 20);
+		return (0);
+	}
+
 	for (i = 0; new_env[i]; i++)
 	{
 		if (new_env[i][0] != '\0')
