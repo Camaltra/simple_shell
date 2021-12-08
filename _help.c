@@ -37,4 +37,5 @@ void _help_error(void)
 		write(STDERR_FILENO, "\nError syntaxe : help [BUILT-IN]\n", 33);
 		write(STDERR_FILENO, "\n   Built-in command :\n\texit\n\tenv\n\tsetenv", 42);
 		write(STDERR_FILENO, "\n\tnsetenv\n\tcd\n\n", 15);
+
 }
