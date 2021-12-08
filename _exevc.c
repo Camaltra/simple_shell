@@ -16,6 +16,7 @@ void _exevc(void)
 	{
 		if (execve(array_command[0], array_command, new_env))
 		{
+			exit_var = 2;
 			exit(EXIT_FAILURE);
 		}
 		exit_var = 0;

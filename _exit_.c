@@ -13,7 +13,6 @@ int _exit_(void)
 	if (array_command[1] == NULL)
 	{
 		free_all();
-		printf("%d", exit_var);
 		exit(exit_var);
 		return (0);
 	}
