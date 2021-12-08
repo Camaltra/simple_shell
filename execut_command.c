@@ -44,7 +44,7 @@ void execut_command(void)
 	else
 	{
 		error_execut();
-		exit_var = 2;
+		exit_var = 127;
 		free_command();
 	}
 }
