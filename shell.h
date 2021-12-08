@@ -67,6 +67,7 @@ int _unsetenv(void);
 
 /* PROGRAM RUN COMMAD */
 void init_path(void);
+void add_last_path_value(char *);
 size_t print_list(const path *h);
 int search_command_path(char *command);
 int (*check_built_in(const char *command))(void);
