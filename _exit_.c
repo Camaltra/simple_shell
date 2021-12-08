@@ -13,7 +13,7 @@ int _exit_(void)
 	if (array_command[1] == NULL)
 	{
 		free_all();
-		exit(EXIT_SUCCESS);
+		exit(2);
 		return (0);
 	}
 	else
