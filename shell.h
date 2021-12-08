@@ -64,7 +64,7 @@ int _setenv(void);
 int _setenv_exist(char *name);
 int _setenv_not_exist(void);
 void init_new_env(int i);
-void error_setenv();
+void error_setenv(void);
 int _unsetenv(void);
 
 /* PROGRAM RUN COMMAD */
@@ -87,6 +87,8 @@ ssize_t _getlines(char **lineptr, size_t *size, FILE *stream);
 int my_fgetc(FILE *filename);
 size_t _fread(void *buf, size_t count, FILE *filename);
 int error_test(char *str);
+void print_number(unsigned int number);
+int _putchar(int c);
 
 /* LINKED LIST USEFUL COMMAND */
 path *add_node_end(path **head, char *str);
