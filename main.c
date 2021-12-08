@@ -42,7 +42,7 @@ void loop_shell(char **env)
 			free(user_input);
 			break;
 		}
-		if (user_input[0] == '\n')
+		if (user_input[0] == '\n' || user_input[0] == '#')
 			continue;
 		if (_strlen(user_input) >= 256)
 		{

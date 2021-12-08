@@ -14,9 +14,10 @@ void check_user_input(void)
 		;
 	if (user_input[i - 1] == '\n')
 		user_input[i - 1] = '\0';
+	sep_to_space();
 	for (i = 0; user_input[i]; i++)
 	{
-		if (user_input[i] == '#')
+		if (user_input[i] == '#' && user_input[i - 1] == ' ')
 		{
 			user_input[i] = '\0';
 		}
