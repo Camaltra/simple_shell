@@ -31,6 +31,7 @@ void loop_shell(char **env)
 
 	copy_env(env);
 	init_path();
+	exit_var = 0;
 	do {
 		_prompt();
 		signal(SIGINT, signal_handler);

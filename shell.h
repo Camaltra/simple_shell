@@ -48,6 +48,7 @@ char **new_env;
 path *path_head;
 char **array_command;
 char *user_input;
+int exit_var;
 
 
 /* Prototype */

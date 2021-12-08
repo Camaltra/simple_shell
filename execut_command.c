@@ -22,7 +22,6 @@ void execut_command(void)
 			return;
 		}
 	}
-
 	f = check_built_in(array_command[0]);
 	if (f != NULL)
 	{
@@ -45,6 +44,7 @@ void execut_command(void)
 	else
 	{
 		error_execut();
+		exit_var = 2;
 		free_command();
 	}
 }
