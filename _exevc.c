@@ -16,12 +16,13 @@ void _exevc(void)
 	{
 		if (execve(array_command[0], array_command, new_env))
 		{
-			exit_var = 2;
-			exit(EXIT_FAILURE);
+			exit(2);
 		}
-		else
-			exit_var = 0;
 	}
 	if (child > 0)
 		wait(&status);
+	if (status == 0)
+		exit_var = 0;
+	else
+		exit_var = 2;
 }
