@@ -13,8 +13,9 @@ void init_path(void)
 	int checkpoint = 0;
 
 	path_head = NULL;
+	path_value = _getenv("PATH");
 
-	if ((path_value = _getenv("PATH")))
+	if (path_value != NULL)
 	{
 		for (i = 0; path_value[i]; i++)
 		{

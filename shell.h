@@ -12,6 +12,8 @@
 #include <stdarg.h>
 #include <sys/types.h>
 #include <sys/wait.h>
+#include <errno.h>
+#define MALLOCSIZE 120
 
 /* Struct */
 
@@ -81,6 +83,10 @@ int echo_exit_status(void);
 void check_user_input(void);
 void _prompt(void);
 void error_execut(void);
+ssize_t _getlines(char **lineptr, size_t *size, FILE *stream);
+int my_fgetc(FILE *filename);
+size_t _fread(void *buf, size_t count, FILE *filename);
+int error_test(char *str);
 
 /* LINKED LIST USEFUL COMMAND */
 path *add_node_end(path **head, char *str);
