@@ -19,7 +19,8 @@ void _exevc(void)
 			exit_var = 2;
 			exit(EXIT_FAILURE);
 		}
-		exit_var = 0;
+		else
+			exit_var = 0;
 	}
 	if (child > 0)
 		wait(&status);
