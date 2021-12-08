@@ -28,6 +28,7 @@ int main(__attribute__((unused)) int ac, char **av, char **env)
 void loop_shell(char **env)
 {
 	size_t number_of_bytes = 0;
+	int i;
 
 	copy_env(env);
 	init_path();
@@ -44,11 +45,13 @@ void loop_shell(char **env)
 		}
 		if (user_input[0] == '\n' || user_input[0] == '#')
 			continue;
-		if (_strlen(user_input) >= 256)
+		for (i = 0; user_input[i]; i++)
 		{
-			write(STDERR_FILENO, "To much char, max size : 256\n", 29);
-			continue;
+			if (user_input[i] != ' ')
+				break;
 		}
+		if (i == _strlen(user_input) - 1)
+			continue;
 		check_user_input();
 		strtow(user_input);
 		execut_command();
