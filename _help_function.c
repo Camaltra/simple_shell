@@ -52,13 +52,3 @@ void _help_unsetenv(void)
 	write(STDOUT_FILENO, "\n\tUnset a new environement variable\n", 36);
 	write(STDOUT_FILENO, "\n\tSyntaxe :\n\t unsetenv VAR\n\n", 28);
 }
-
-/**
-* _help_cd - Print the help page
-*
-* Return: Anything, cause void function
-*/
-void _help_cd(void)
-{
-	printf("It's cool");
-}
