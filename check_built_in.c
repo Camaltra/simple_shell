@@ -16,6 +16,7 @@ int (*check_built_in(const char *command))(void)
 				{"setenv", _setenv},
 				{"unsetenv", _unsetenv},
 				{"help", _help},
+				{"cd", cd_function},
 				{NULL, NULL}};
 
 	for (i = 0; p[i].command; i++)

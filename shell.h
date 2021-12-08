@@ -80,6 +80,7 @@ int echo_exit_status(void);
 void check_user_input(void);
 void _prompt(void);
 void error_execut(void);
+int cd_function(void);
 
 /* LINKED LIST USEFUL COMMAND */
 path *add_node_end(path **head, char *str);
