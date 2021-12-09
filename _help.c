@@ -17,8 +17,6 @@ int _help(void)
 			_help_setenv();
 		else if (_strcmp(array_command[1], "unsetenv") == 0)
 			_help_unsetenv();
-		else if (_strcmp(array_command[1], "cd") == 0)
-			_help_cd();
 		else
 			_help_error();
 	}

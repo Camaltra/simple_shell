@@ -122,6 +122,5 @@ void _help_exit(void);
 void _help_env(void);
 void _help_setenv(void);
 void _help_unsetenv(void);
-void _help_cd(void);
 
 #endif /* SHELL_H */
